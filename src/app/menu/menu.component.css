@@ -1,0 +1,157 @@
+#btn-menu{
+    display: none;
+    margin-top: 10px;
+}
+
+.logoMenu {
+    cursor: pointer; 
+    font-size: 40px;
+    color: #fdae1c;
+    margin-left: 10px;
+}
+
+.container-menu{
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2
+}
+
+.container-menu .cont-menu .user-info .titulo2{
+    margin-top: 20px;
+    color: #fdae1c;
+    font-size: 45px; /* Ajusta el tamaño de la letra según sea necesario */
+    font-weight: bold; /* Pone el texto en negrita */
+    justify-content: center;
+    align-items: center;
+
+}
+
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #0b141e;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+    z-index: 3;
+}
+
+.user-info {
+    text-align: center;
+    padding: 40px;
+}
+
+.user-info img {
+    display: block;
+    margin: 0 auto; 
+    max-width: 90%;
+}
+
+.user-info h2 {
+    margin-top: 10px;
+}
+
+
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+    width: 100%;
+}
+
+/****************** */
+
+.cont-menu nav{
+    width: 100%;
+    margin-top: -60px;
+}
+
+.cont-menu nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px;
+    color: #000; /* Cambia el color del texto a negro */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 20px; /* Bordes redondeados */
+    width: 190px; /* Ancho fijo para los botones */
+    height: 10px; /* Altura fija para los botones */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle efecto de botón */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para los cambios de color */
+    margin: 10px 0; /* Margen entre los enlaces */
+    margin-left: 10px;
+}
+
+.cont-menu nav a:hover {
+    background: #fdae1c; /* Color de fondo al pasar el cursor */
+    color: #fff; /* Color del texto al pasar el cursor */
+}
+
+/****************** */
+
+
+.cont-menu label {
+    display: flex;
+    right: 5px;
+    bottom: 20px; /* Ajustar la posición al final */
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.close-button {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior según sea necesario */
+    left: 10px; /* Ajusta la distancia desde la izquierda según sea necesario */
+    display: flex;
+    flex-direction: column; /* Alinea los labels en una columna */
+    align-items: center;
+    justify-content: center;
+    z-index: 999; /* Ajusta el valor del índice Z según sea necesario para asegurarte de que esté por encima de otros elementos si es necesario */
+}
+
+.close-button label,
+.close-button .IniSe {
+    color: #ffffff;
+    background-color: #224876; /* Color de fondo del botón */
+    border-radius: 10px; /* Esquinas redondeadas */
+    border: 2px solid #ffffff; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    text-align: center; /* Centra el texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle efecto de botón */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+    margin-bottom: 10px; /* Espaciado entre los elementos */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    display: block; /* Asegura que el enlace se comporte como un elemento de bloque */
+}
+
+.close-button .btn-menu{
+    padding: 13px 79px; /* Relleno interno del botón */
+}
+
+.close-button .IniSe{
+    padding: 13px 88px; /* Relleno interno del botón */
+}
+
+.close-button label:hover,
+.close-button .IniSe:hover {
+    background-color: #304659; /* Color de fondo al pasar el cursor */
+}
+

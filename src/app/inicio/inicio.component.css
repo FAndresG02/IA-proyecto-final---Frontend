@@ -1,0 +1,181 @@
+body {
+    background-color: #304659;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* diseño del logo usuario */
+  #btn-menu {
+    display: none;
+  }
+  
+  .logoMenu {
+    position: absolute;
+    top: -48px;
+    right: 10px;
+    font-size: 40px;
+    color: #fdae1c;
+  }
+  
+  .IniSe {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* diseño logo */
+  .ImgLogo {
+    max-width: 40%;
+    margin-bottom: 20px;
+    margin-top: -100px;
+  }
+  
+  /* diseño chat-box */
+  .chat-box {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    min-height: 400px; /* Ajusta este valor según tus necesidades */
+    overflow-y: auto; /* Para permitir el scroll si el contenido excede la altura */
+    border: 2px solid #000000; 
+  }
+  
+  .message {
+    background-color: #d3d3d3;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #333;
+    margin-left: 600px;
+    border: 2px solid #000000; 
+  }
+  
+  /* diseño input-box */
+  .input-box {
+    display: flex;
+    width: 100%;
+    max-width: 1243px;
+  }
+  
+  .input-box input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    border: 2px solid #000000; 
+  }
+  
+  .input-box button {
+    background-color: #000000;
+    border: 2px solid #ffffff; 
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .input-box button:hover {
+    background-color: #fdaf1d; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+  }
+  
+  .input-box button i {
+    font-size: 25px;
+  }
+  
+  .enviar {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Media queries para diseño responsivo */
+  @media (max-width: 768px) {
+    .logoMenu {
+      top: -48px;
+      right: 1px;
+      font-size: 40px;
+    }
+    
+    .ImgLogo {
+      max-width: 80%;
+      margin-top: -250px;
+    }
+    
+    .chat-box {
+      width: 90%;
+      min-height: 300px;
+      padding: 15px;
+    }
+    
+    .message {
+      font-size: 18px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    .input-box input {
+      font-size: 18px;
+      padding: 8px;
+    }
+    
+    .input-box button {
+      padding: 10px;
+    }
+    
+    .input-box button i {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logoMenu {
+      top: 5px;
+      right: 5px;
+      font-size: 25px;
+    }
+    
+    .ImgLogo {
+      max-width: 80%;
+      margin-top: 0;
+    }
+    
+    .chat-box {
+      width: 100%;
+      min-height: 200px;
+      padding: 10px;
+    }
+    
+    .message {
+      font-size: 16px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    
+    .input-box input {
+      font-size: 16px;
+      padding: 6px;
+    }
+    
+    .input-box button {
+      padding: 8px;
+    }
+    
+    .input-box button i {
+      font-size: 18px;
+    }
+  }
+  
